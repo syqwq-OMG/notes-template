@@ -89,7 +89,8 @@
   let cover = {
     let fill-color = rgb("#D8CFC6")
 
-    set page(footer: none, background: image("src/bg.png", width: 101%))
+    set page(footer: none, background: image("src/bg-2.svg", width: 101%,fit: "cover"))
+
     set text(fill: white)
     set par(first-line-indent: 0pt)
 
