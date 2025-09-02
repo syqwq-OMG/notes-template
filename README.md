@@ -1,5 +1,5 @@
 # notes-template
-notes template in typst for ECNU students
+notes template in typst
 
 ## features
 - env for def, thm, problem, proof, sol, lemma etc.
