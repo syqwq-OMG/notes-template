@@ -27,6 +27,7 @@
 
   set par(first-line-indent: 2em)
 
+  show "。": ". "
   show: thmrules
   show: zebraw
 
@@ -81,15 +82,22 @@
 
   show heading.where(level: 2): t => context {
     set par(first-line-indent: 0em)
-    set text(size: 15pt, font: ("New Computer Modern", "Source Han Serif SC"))
+    set text(size: 18pt, font: ("New Computer Modern", "Source Han Serif SC"))
 
     [#counter(heading).display("1.1") #t.body]
+  }
+
+  show heading.where(level: 3): t => context {
+    set par(first-line-indent: 0em)
+    set text(size: 14pt, font: ("New Computer Modern", "Source Han Serif SC"))
+
+    [#counter(heading).display("1.1.1") #t.body]
   }
 
   let cover = {
     let fill-color = rgb("#D8CFC6")
 
-    set page(footer: none, background: image("src/bg-2.svg", width: 101%,fit: "cover"))
+    set page(footer: none, background: image("src/bg-2.svg", width: 101%, fit: "cover"))
 
     set text(fill: white)
     set par(first-line-indent: 0pt)
@@ -210,7 +218,7 @@
   bodyfmt: thmtext.with(color: color.darken(70%)),
   namefmt: thmname.with(color: color.darken(30%)),
   frame: (
-    body-color: color.lighten(98%),
+    body-color: color.lighten(96%).transparentize(50%),
     border-color: color.darken(10%),
     thickness: (left: 2pt),
     inset: 1.2em,
