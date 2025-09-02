@@ -6,6 +6,7 @@ notes template in typst for ECNU students
 - school logo
 - auto numbering
 - support watermark
+- some .svg pics can be used as cover in src directory
 
 ## previews
 ![封面](./pic/pic-1.png)
