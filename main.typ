@@ -3,7 +3,6 @@
 
 = 向量空间
 
-Suppose $V$ is a linear space on $FF$.
 
 线性代数是研究有限维向量空间上的线性映射的学问.我们最终会理解这些术语的具体 含义.在本章中，我们将定义向量空间并讨论它们的基本性质.
 
@@ -30,30 +29,19 @@ Suppose $V$ is a linear space on $FF$.
   其中 $a,b,c,d in RR$.
 ]
 
-#problem[
+#lemma([$LL$])[
+  This is Lemma env.
+]
+
+#proposition([$PP$])[
+  This is Proposition env.
+]
+
+#problem([PP])[
   证明： $sqrt(2) in.not QQ$.
 ]
 
-=== 你好啊
-111111
 
-#definition([复数(complex number) $CC$])[
-  - 一个复数是一个有序对 $(a,b)$，其中 $a,b in RR$，不过我们会把这个写成 $a+b i$
-  - 全体复数集合用 $CC$ 表示：
-  $
-    CC=\{ a+b i: a,b in RR \}
-  $
-  - $CC$ 上的加法和乘法定义为
-  $
-    (a+b i)+(c+d i)=(a+c)+(b+d)i \
-    (a+b i)(c+d i)=(a c-b d )+(a d + b c)i
-  $
-  其中 $a,b,c,d in RR$.
-]
-
-#problem[
-  证明： $sqrt(2) in.not QQ$.
-]
 #theorem([length of $z$ ])[
   Suppose $z in CC$, then we have:
   $
@@ -61,8 +49,6 @@ Suppose $V$ is a linear space on $FF$.
   $
 ]
 
-如果 𝑎 ∈ R，那么我们将 𝑎 + 0i 等同于实数 𝑎.由此，我们将 R 视为 C 的子集.我们通常
-将 0 + 𝑏i 简写作 𝑏i，将 0 + 1i 简写作 i. 上述复数乘法定义式的来由可以这样说
 
 #example([复数的算数运算])[
   运用 1 中的性质，可以算出 $(2+3i)(4+5i)$ 的值：
@@ -80,7 +66,20 @@ Suppose $V$ is a linear space on $FF$.
     CC=\{ a+b i: a,b in RR \}
   $
 ]
-== 向量空间的定义
+
+== 子空间
+#definition([子空间(subspace)])[
+  设 $V$ 是一个向量空间.如果 $W subset.eq V$ 并且 $W$ 本身也是一个向量空间(使用 $V$ 中的加法和标量乘法),那么我们说 $W$ 是 $V$ 的一个 *子空间*.
+]
+
+接下来的结果给出了检验向量空间的子集是否为子空间的最简单方法。
+
+#remark([检验子空间的条件])[
+ 当且仅当 $V$ 的子集 $U$ 满足以下三个条件时， $U$ 是 $V$ 的子空间：
+ - 加法恒等元 \ $0 in U$ 
+ - 对于加法封闭 \ $u,w in U => u+w in U$ 
+ - 对于标量乘法封闭  \ $c in FF, u in U => c u in U$
+]
 
 #pagebreak()
 
@@ -142,6 +141,7 @@ However, for this matrix $A$ we can interpret it from another perspective.
   This is proof.
 ]
 
+
 #problem("Basis")[
   List a basis for the following linear spaces with default addition and scaling operator:
   - $RR^(2) $
@@ -151,6 +151,8 @@ However, for this matrix $A$ we can interpret it from another perspective.
   - $(1,0)'$, $(0,1)'$  
   - $1$ 
 ]
+
+=== Here are some codes
 
 ```cpp
 #include <iostream>

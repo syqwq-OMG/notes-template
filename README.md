@@ -5,7 +5,13 @@ notes template in typst for ECNU students
 - env for def, thm, problem, proof, sol, lemma etc.
 - school logo
 - auto numbering
-- enable watermark
+- support watermark
+
+## previews
+![封面](./pic/pic-1.png)
+![ch-1](./pic/pic-2.png)
+![content](./pic/pic-3.png)
+![ch-2](./pic/pic-4.png)
 
 ---
 author: syqwq
