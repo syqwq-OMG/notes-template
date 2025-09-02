@@ -243,8 +243,8 @@
 #let problem = problem-style("problem", "Problem")
 
 #let example-style = builder-thmline(color: colors.at(6))
-#let example = example-style("example", "Example").with(numbering: none)
-// #let example=example-style("example", "Example")
+// #let example = example-style("example", "Example").with(numbering: none)
+#let example=example-style("example", "Example")
 
 #let proof(body, name: none) = {
   thmtitle[Proof]

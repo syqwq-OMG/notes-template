@@ -9,10 +9,10 @@ notes template in typst for ECNU students
 - some .svg pics can be used as cover in src directory
 
 ## previews
-![封面](./pic/pic-1.png)
-![ch-1](./pic/pic-2.png)
-![content](./pic/pic-3.png)
-![ch-2](./pic/pic-4.png)
+![封面](./pic/out1.svg)
+![ch-1](./pic/out3.svg)
+![content](./pic/out4.svg)
+![ch-2](./pic/out5.svg)
 
 ---
 author: syqwq
