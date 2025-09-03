@@ -3,6 +3,8 @@
 #import "@preview/showybox:2.0.4": showybox
 #import "@preview/zebraw:0.5.5": zebraw
 
+#import "utils.typ":*
+
 #let colors = (
   rgb("93B7BE"),
   rgb("FBACBE"),
@@ -25,11 +27,12 @@
     weight: "light",
   )
 
-  set par(first-line-indent: 2em)
-
   show "。": ". "
   show: thmrules
   show: zebraw
+
+  set par(first-line-indent: 2em)
+  set math.mat(delim: "[")
 
   set page(
     numbering: "1",
@@ -143,7 +146,8 @@
   text(font: "New Computer Modern Sans", weight: "semibold", fill: color)[#t]
 }
 #let thmname(t, color: rgb("#000000")) = {
-  text(font: ("New Computer Modern Sans", "Heiti SC"), fill: color)[#t]
+  // text(font: ("New Computer Modern Sans", "Heiti SC"), fill: color)[#t]
+  text(font: ("New Computer Modern Sans", "SimHei"), fill: color)[#t]
 }
 
 #let thmtext(t, color: rgb("#000000")) = {
